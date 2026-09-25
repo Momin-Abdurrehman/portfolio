@@ -1,0 +1,185 @@
+/*
+ * CS313 Web Engineering - Lab 3
+ * Momin Abdurrehman | CMS ID 502825
+ * Shared external stylesheet for every page in the portfolio.
+ */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #1d4e89;
+  color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+}
+header h1 { margin: 0; }
+header p { margin: 6px 0 0; font-style: italic; }
+
+/* Navigation - links sit side by side because each item floats left */
+nav {
+  background-color: #eef4fb;
+  border: 1px solid #cdd9e8;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 0 12px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li { float: left; }
+nav a {
+  display: block;
+  padding: 12px 14px;
+  color: #1d4e89;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { color: #e07a1f; text-decoration: underline; }
+nav a.active { color: #e07a1f; border-bottom: 3px solid #e07a1f; }
+
+/* The floated list items collapse the nav height, so clear them */
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h2 {
+  color: #1d4e89;
+  border-bottom: 2px solid #1d4e89;
+  padding-bottom: 4px;
+}
+
+/* Generic clearing helper used after floated groups */
+.clear { clear: both; }
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+th, td { border: 1px solid #999; padding: 8px; text-align: left; vertical-align: top; }
+th { background-color: #eef4fb; color: #1d4e89; }
+
+/* Home page - photo floats left so the intro text wraps beside it */
+.profile-photo {
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #1d4e89;
+  margin: 5px 24px 15px 0;
+}
+.intro {
+  background-color: #eef4fb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Hobbies */
+.hobby {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 6px solid #1d4e89;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 12px 0;
+}
+.hobby h3 { margin: 0 0 6px; color: #1d4e89; }
+.hobby p { margin: 0; color: #555; }
+
+/* Skills page */
+.lang {
+  float: left;
+  width: 48%;
+  margin: 1%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 6px solid #1d4e89;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.lang strong { color: #1d4e89; }
+ul { margin: 6px 0; padding-left: 20px; }
+
+/* Gallery - tiles float left and wrap into rows */
+.gallery-tile {
+  float: left;
+  width: 270px;
+  margin: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.gallery-tile img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.gallery-tile p { margin: 8px 0 0; font-size: 15px; color: #444; font-style: italic; }
+
+/* Contact page - detail cards float into two columns */
+.detail-card {
+  float: left;
+  width: 48%;
+  margin: 1%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 6px solid #1d4e89;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.detail-card strong { color: #1d4e89; }
+
+form {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+label { font-weight: bold; display: block; margin-top: 10px; }
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-family: inherit;
+}
+input[type="submit"] {
+  background-color: #1d4e89;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+  padding: 10px;
+}
+input[type="submit"]:hover { background-color: #e07a1f; }
+
+/* Footer */
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+  padding: 12px;
+  background-color: #1d4e89;
+  color: #ffffff;
+  border-radius: 8px;
+}
+footer a { color: #cfe0f5; }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Momin Abdurrehman | CMS ID 502825 | CS313 Web Engineering Lab 3 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Momin Abdurrehman</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="skills.html">Personal Skills</a></li>
+      <li><a href="gallery.html">Image Gallery</a></li>
+      <li><a class="active" href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>My Details</h2>
+      <div class="detail-card">
+        <strong>Email:</strong> <a href="mailto:momin332472@gmail.com">momin332472@gmail.com</a>
+      </div>
+      <div class="detail-card">
+        <strong>Phone:</strong> +92-345-506-0621
+      </div>
+      <div class="detail-card">
+        <strong>Location:</strong> Islamabad, Pakistan
+      </div>
+      <div class="detail-card">
+        <strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/momin-abdurrehman">linkedin.com/in/momin-abdurrehman</a>
+      </div>
+      <div class="detail-card">
+        <strong>GitHub:</strong>
+        <a href="https://github.com/Momin-Abdurrehman">github.com/Momin-Abdurrehman</a>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <h2>Send Me a Message</h2>
+      <form action="mailto:momin332472@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>CS313 Web Engineering &middot; Lab 3 &middot; Momin Abdurrehman &middot; CMS ID 502825</p>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
